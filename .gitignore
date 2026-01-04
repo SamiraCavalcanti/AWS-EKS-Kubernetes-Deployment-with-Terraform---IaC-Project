@@ -1,0 +1,116 @@
+# Terraform state files
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Terraform directory
+.terraform/
+.terraform.d/
+
+# Terraform variable files (contêm dados sensíveis)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Terraform crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files which might contain sensitive data
+# Example: terraform.tfvars
+terraform.tfvars
+terraform.tfvars.json
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+.terraform.tfrc
+
+# Ignore plan files
+*.tfplan
+plan.out
+
+# Ignore local backend override
+local.tf
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.iws
+*.ipr
+
+# OS files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Build files
+dist/
+build/
+*.tar.gz
+*.zip
+
+# Log files
+*.log
+logs/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# AWS specific
+.aws/
+aws-cli-cache/
+
+# Kubeconfig
+.kube/
+kubeconfig_*
+
+# Terraform Apply backup
+*.backup
+
+# Ignore .terraform files in subdirectories
+**/.terraform
+**/.terraform.lock.hcl
+**/terraform.tfstate*
+
+# Keep example files
+!*.example.tf
+!example_*.tf
+
+# Ignore personal/temporary files
+personal/
+tmp/
+temp/
+*.bak
+*.orig
+
+# SSH Keys (security!)
+*.pem
+*.key
+*.pub
+!*example.pub
+
+# Sensitive data
+*.secret
+credentials.json
+secrets.json
+
+# GitHub specific
+.github/workflows/secrets/
