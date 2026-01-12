@@ -4,7 +4,7 @@
 
 ---
 
-![alt text](image.png)
+![Super Mario](https://imgur.com/rC4Qe8g.png)  
 
 ## 📋 Visão Geral
 
